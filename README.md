@@ -5,7 +5,7 @@ Detailed documentation is in the "docs" directory
 
 ## Quick start
 
-1. pip install adminsortable2
+1. `pip install adminsortable2`
 2. Add "banner" to your INSTALLED_APPS setting like this:
     ```
     INSTALLED_APPS = (
