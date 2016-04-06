@@ -14,5 +14,5 @@ class BannerAdmin(SortableAdminMixin, admin.ModelAdmin):
     list_per_page = 20
     search_fields = ['title']
 
-admin.site.resister(Group, GroupAdmin)
+admin.site.register(Group, GroupAdmin)
 admin.site.register(Banner, BannerAdmin)
