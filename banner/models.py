@@ -2,7 +2,20 @@
 # vim: set fileencoding=utf-8 :
 from django.db import models
 
+class Group(models.Model):
+    name = models.CharField(max_length=200, verbose_name='名称')
+    created = models.DateTimeField(auto_now_add=True, verbose_name='创建时间')
+    updated = models.DateTimeField(auto_now=True, verbose_name='更新时间')
+    def __unicode__(self):
+        return self.name
+
+    class Meta(object):
+        verbose_name = '分组'
+        verbose_name_plural = '分组'
+
+
 class Banner(models.Model):
+    group = models.ForeignKey(Group, related_name='banners', verbose_name='分组')
     title = models.CharField(max_length=200, verbose_name='标题')
     image = models.ImageField(upload_to='upload/banner/%Y/%m/%d',\
                               verbose_name='图片')
