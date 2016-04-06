@@ -10,6 +10,7 @@ class GroupAdmin(admin.ModelAdmin):
 
 class BannerAdmin(SortableAdminMixin, admin.ModelAdmin):
     list_display = ('group', 'title', 'image_url', 'created', 'is_show')
+    list_display_links = ('group',)
     list_filter = ('is_show',)
     list_per_page = 20
     search_fields = ['title']
