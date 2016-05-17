@@ -1,9 +1,9 @@
 Metadata-Version: 1.1
 Name: django-banner
-Version: 0.2
-Summary: A simple page model.
-Home-page: http://github.com/ChanMo/django-banner
-Author: Chen
+Version: 0.2.3
+Summary: A simple banner module.
+Home-page: http://github.com/ChanMo/django_banner
+Author: ChanMo
 Author-email: chen.orange@aliyun.com
 License: BSD License
 Description: Django-banner
@@ -13,12 +13,6 @@ Description: Django-banner
         
         使用方法:
         ---------
-        
-        安装依赖模块:
-        
-        .. code-block::
-        
-            pip install adminsortable2
         
         修改 *settings.py* 文件:
         

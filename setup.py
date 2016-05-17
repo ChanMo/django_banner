@@ -9,23 +9,25 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name = 'django-banner',
-    version = '0.2',
+    version = '0.2.3',
     packages = ['banner'],
     include_package_data = True,
+    install_requires = [
+        'django-admin-sortable2>=0.6.3',
+    ],
     license = 'BSD License',
-    description = 'A simple page model.',
+    description = 'A simple banner module.',
     long_description = README,
-    url = 'http://github.com/ChanMo/django-banner',
-    author = 'Chen',
+    url = 'http://github.com/ChanMo/django_banner',
+    author = 'ChanMo',
     author_email = 'chen.orange@aliyun.com',
     classifiers = [
         'Environment :: Web Environment',
         'Framework :: Django',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License', # example license
+        'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        # Replace these appropriately if you are stuck on Python 2.
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',

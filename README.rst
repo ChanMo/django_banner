@@ -6,12 +6,6 @@ Django-banner
 使用方法:
 ---------
 
-安装依赖模块:
-
-.. code-block::
-
-    pip install adminsortable2
-
 修改 *settings.py* 文件:
 
 .. code-block::
